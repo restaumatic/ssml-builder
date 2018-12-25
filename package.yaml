@@ -1,7 +1,7 @@
 name: ssml-builder
 version: '0.1.0.0'
-description: A DSL for building SSML documents
 synopsis: A DSL for building SSML documents
+description: A DSL for building SSML documents, using Text.XML.Light.
 category: Text
 author: Maciej Bielecki
 maintainer: maciej.bielecki@prati.pl
