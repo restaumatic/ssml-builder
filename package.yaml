@@ -1,5 +1,6 @@
 name: ssml-builder
 version: '0.1.0.0'
+synopsis: A DSL for building SSML documents
 category: Text
 author: Maciej Bielecki
 maintainer: maciej.bielecki@prati.pl
