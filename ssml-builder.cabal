@@ -1,0 +1,51 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           ssml-builder
+version:        0.1.0.0
+synopsis:       A DSL for building SSML documents
+description:    A DSL for building SSML documents, using Text.XML.Light.
+category:       Text
+homepage:       https://github.com/restaumatic/ssml-builder#readme
+bug-reports:    https://github.com/restaumatic/ssml-builder/issues
+author:         Maciej Bielecki
+maintainer:     maciej.bielecki@prati.pl
+copyright:      2018 Maciej Bielecki
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/restaumatic/ssml-builder
+
+library
+  exposed-modules:
+      Text.SSML.Builder
+  other-modules:
+      Paths_ssml_builder
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , data-default
+    , xml >=1.3 && <2
+  default-language: Haskell2010
+
+test-suite tests
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_ssml_builder
+  hs-source-dirs:
+      test
+  build-depends:
+      base >=4.7 && <5
+    , hspec
+    , ssml-builder
+  default-language: Haskell2010
